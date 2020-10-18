@@ -1,0 +1,123 @@
+body {
+  background-color: #503291;
+  color: #1B1B25;
+}
+
+
+#content-container {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  width: fit-content;
+  margin: 40px auto;
+  background-color: white;
+  padding: 20px 30px;
+  border-radius: 20px;
+}
+
+#header {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#header-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+h1, h2 {
+  margin-bottom: 0;
+}
+
+img {
+  height: 120px;
+}
+
+#header-img {
+  height: fit-content;
+  padding-bottom: 15px;
+}
+
+
+#buttons {
+  text-align: center;
+}
+
+button {
+  margin: 20px 0;
+  text-align: center;
+  font-size: 1.0em;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  background-color: #2dbecd;
+}
+
+button:hover {
+  background-color: #ffc832;
+  cursor: pointer;
+}
+
+button:active {
+  background-color: #ffc832;
+  font-weight: bold;
+}
+
+button:focus {
+  outline: none;
+}
+
+
+#bingo-container {
+  position: relative;
+}
+
+#bingo-board {
+  width: 460px;
+  height: 460px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#bingo-board>div {
+  width: 100px;
+  height: 100px;
+  border-radius: 15px;
+  background-color: rgb(239, 239, 239);
+  text-align: center;
+  vertical-align: middle;
+  padding: 5px;
+  font-size: 0.8em;
+}
+
+#bingo-board>div:hover {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#bingo-board>div:active {
+  background-color: #eb3c96;
+  color: white;
+}
+
+.marked {
+	background-color: #eb3c96 !important;
+  font-weight: bold;
+  color: white;
+}
+
+#bingo-win {
+  position: absolute;
+  visibility: hidden;
+  top: 200px;
+  background-color: #2dbecd;
+  width: 460px;
+  height: 40px;
+  font-size: 2em;
+  text-align: center;
+  vertical-align: middle;
+  padding: 10px 0;
+  z-index: 5;
+}
