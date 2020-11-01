@@ -12,11 +12,22 @@ const markedPhrases = []
 
 // config array for phrases
 
-const phrases = ["Hi, who just joined?", "Can you email that to everyone?", "___ , are you there?", "(Sound of someone typing, possibly with a hammer)",
-	"Can everyone go on mute please", "(Loud, painful echo)", "(Child or animal noise)", "(Someone not muted during a side conversation)", "Hi, can you hear me?",
-	"I'm sorry, I was on mute", "Sorry, go ahead", "Can everyone see my screen?", "Sorry, I was having connection issues",
-	"So (faded out) I can (interrupted connection) by (cuts out), ok?", "Sorry, I'm late, I had another meeting", "I have a hard stop at..."]
-
+const phrases = ["I shouldn't do live coding...", 
+"Oh... wait... what??", 
+"Can you slack that?", 
+"Will that work? (of course not)", 
+"asking a question where the answer is loop", 
+"(someone dialing in late)", 
+"(background noise because somebody wasn't on mute)", 
+"I am not turning on my camera because I have a bad connection", 
+"Can you see my screen?", 
+"Can everyone please go on mute", 
+"My code is not working", 
+"(animal or flat mate walk in)", 
+"(ackward silence)",
+"I'm sorry I was on mute",
+"Any questions?",
+"(makes a joke about ux/ui designers)" ]
 
 // Function to handle click events on divs
 

@@ -1,5 +1,5 @@
 body {
-  background-color: #503291;
+  background-color: rgb(45, 53, 76);
   color: #1B1B25;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -25,6 +25,8 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  padding-bottom: 30px;
+  margin-left: 20px;
 }
 
 h1,
@@ -47,22 +49,22 @@ img {
 }
 
 button {
-  margin: 20px 0;
+  margin: 20px 10px;
   text-align: center;
   font-size: 1.0em;
   padding: 10px 20px;
   border: none;
   border-radius: 10px;
-  background-color: #2dbecd;
+  background-color: rgb(45, 197, 250);
 }
 
 button:hover {
-  background-color: #ffc832;
+  background-color: rgb(255, 210, 111);
   cursor: pointer;
 }
 
 button:active {
-  background-color: #ffc832;
+  background-color: rgb(255, 210, 111);
   font-weight: bold;
 }
 
@@ -81,6 +83,7 @@ button:focus {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin-top: 10px;
 }
 
 #bingo-board>div {
@@ -100,17 +103,17 @@ button:focus {
 }
 
 .marked {
-  background-color: #eb3c96 !important;
+  background-color: rgb(45, 197, 250) !important;
   font-weight: bold;
-  color: white;
+  color: rgb(45, 53, 76);
 }
 
 #bingo-win {
   position: absolute;
   visibility: hidden;
-  top: 350px;
-  left: 308px;
-  background-color: #503291;
+  top: 40vh;
+  left: 42vw;
+  background-color: rgb(45, 53, 76);
   font-size: 2em;
   font-weight: bold;
   color: white;
