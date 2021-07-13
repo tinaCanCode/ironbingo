@@ -24,10 +24,10 @@ const phrases = ["I shouldn't do live coding...",
 "Can everyone please go on mute", 
 "My code is not working", 
 "(animal or flat mate walk in)", 
-"(ackward silence)",
+"(awkward silence)",
 "I'm sorry I was on mute",
 "Any questions?",
-"(makes a joke about ux/ui designers)" ]
+"(someone makes a joke)" ]
 
 // Function to handle click events on divs
 
@@ -143,16 +143,7 @@ function checkIfWin() {
 		}
 	}
 
-	// Try to have winning Phrases marked magenta
 	if (hasBingoHorizontal || hasBingoVertical || hasBingoDiagonal) {
-		// winningPhrases.forEach(phrase => {
-		// 	let winningPhrase = divsForPhrases.filter(div => {
-		// 		return div.dataset.id === phrase;
-		// 	})
-		// 	console.log(winningPhrase)
-			
-		// 	winningPhrase[0].style.backgroundColor = "blue";
-		// })
 		setTimeout(showBingoWin, 200)
 	}
 
