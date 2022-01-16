@@ -12,22 +12,22 @@ const markedPhrases = []
 
 // config array for phrases
 
-const phrases = ["I shouldn't do live coding...", 
-"Oh... wait... what??", 
-"Can you slack that?", 
-"Will that work? (of course not)", 
-"asking a question where the answer is loop", 
-"(someone dialing in late)", 
-"(background noise because somebody wasn't on mute)", 
-"I am not turning on my camera because I have a bad connection", 
-"Can you see my screen?", 
-"Can everyone please go on mute", 
-"My code is not working", 
-"(animal or flat mate walk in)", 
-"(awkward silence)",
-"I'm sorry I was on mute",
-"Any questions?",
-"(someone makes a joke)" ]
+const phrases = ["Stream starting late", 
+"No sound or dodgy sound", 
+"Someone turning up in character", 
+"One of them doing an accent", 
+"Host doing a close-up of himself", 
+"Your comment is read out loud or referenced by the lads", 
+"Technical difficulties...", 
+"Foil doing magic with the equipment", 
+"Lads singing a song", 
+"Arms doing mouth trumpet (or other sound)", 
+"FAH sketch quote or reference", 
+"Foil wearing shorts", 
+"Hog wearing one of his yellow jumpers",
+"Someone mentions PUBG",
+"Question directly to the audience",
+"Someone mentions Foil's degrees" ]
 
 // Function to handle click events on divs
 
@@ -74,7 +74,9 @@ generateBoardBtn.addEventListener("click", () => {
 	};
 
 	divsForPhrases.forEach(div => {
-		div.innerText = phrases[divsForPhrases.indexOf(div)];
+		let newSpan = document.createElement("span");
+		newSpan.innerText = phrases[divsForPhrases.indexOf(div)];
+		div.appendChild(newSpan)
 		//Event handler to mark / unmark phrase divs on click
 		div.addEventListener("click", handleClickOnDiv);
 	});
